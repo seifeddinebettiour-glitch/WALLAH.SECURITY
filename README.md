@@ -1,9 +1,15 @@
-# WALLAH SECURITY
+# WALLAH SECURITY v2
 
-Sito web di WALLAH SECURITY.
+Versione aggiornata del sito statico con:
+- prenotazione appuntamento/consulenza tramite Formspree
+- selezione del tipo di appuntamento
+- QR WhatsApp
+- sezione News Energia con riferimenti ARERA e Portale Offerte
+- sezione Maps pronta per inserire l'indirizzo
+- contatti e form preventivo esistenti
 
-Contatti:
-- Telefono / WhatsApp: 351 443 6993
-- Modulo: Formspree
+## GitHub Pages
+Carica `index.html`, `style.css`, `script.js`, `qr-whatsapp.svg` nel repository e attiva Pages da `main` / `root`.
 
-Pubblicazione: caricare i file nella root del repository e attivare GitHub Pages su main / root.
+## Maps
+Per una mappa incorporata reale bisogna inserire l'indirizzo e, se si usa Maps Embed API, una chiave Google Maps secondo la configurazione Google Cloud.

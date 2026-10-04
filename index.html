@@ -1,18 +1,31 @@
-<!doctype html><html lang="it"><head>
+<!doctype html>
+<html lang="it">
+<head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="WALLAH SECURITY - Sistemi di sicurezza, antifurto e videosorveglianza.">
-<meta name="theme-color" content="#06101c"><title>WALLAH SECURITY | Sicurezza senza compromessi</title>
-<link rel="stylesheet" href="style.css"></head><body>
-<header><a class="logo" href="#home"><b>W</b><span>WALLAH <i>SECURITY</i></span></a>
-<nav><a href="#servizi">Servizi</a><a href="#tecnologia">Tecnologia</a><a href="#faq">FAQ</a><a href="#preventivo">Preventivo</a></nav>
-<a class="call" href="tel:+393514436993">351 443 6993</a></header>
+<meta name="description" content="WALLAH SECURITY - Sistemi di sicurezza, antifurto, videosorveglianza, consulenze e appuntamenti.">
+<meta name="theme-color" content="#06101c">
+<title>WALLAH SECURITY | Sicurezza senza compromessi</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="logo" href="#home"><b>W</b><span>WALLAH <i>SECURITY</i></span></a>
+  <nav>
+    <a href="#servizi">Servizi</a><a href="#appuntamento">Appuntamento</a><a href="#energia">Energia</a><a href="#maps">Maps</a><a href="#preventivo">Preventivo</a>
+  </nav>
+  <a class="call" href="tel:+393514436993">351 443 6993</a>
+</header>
 
 <main>
-<section class="hero" id="home"><div class="copy"><small>● SICUREZZA INTELLIGENTE</small>
-<h1>La tua sicurezza.<br><em>La nostra priorità.</em></h1>
-<p>Soluzioni professionali di antifurto, videosorveglianza e sicurezza intelligente per proteggere casa, attività e persone.</p>
-<div class="actions"><a class="btn" href="#preventivo">Richiedi un preventivo →</a><a class="btn alt" href="https://wa.me/393514436993">WhatsApp</a></div></div>
-<div class="visual"><div class="glow"></div><div class="shield"><strong>W</strong><b>PROTECTED</b><small>WALLAH SECURITY</small><span>● SISTEMA ATTIVO</span></div><label>24/7<br><small>Protezione</small></label></div></section>
+<section class="hero" id="home">
+  <div class="copy">
+    <small>● SICUREZZA INTELLIGENTE</small>
+    <h1>La tua sicurezza.<br><em>La nostra priorità.</em></h1>
+    <p>Soluzioni professionali di antifurto, videosorveglianza e sicurezza intelligente per proteggere casa, attività e persone.</p>
+    <div class="actions"><a class="btn" href="#appuntamento">Prenota un appuntamento →</a><a class="btn alt" href="https://wa.me/393514436993">WhatsApp</a></div>
+  </div>
+  <div class="visual"><div class="glow"></div><div class="shield"><strong>W</strong><b>PROTECTED</b><small>WALLAH SECURITY</small><span>● SISTEMA ATTIVO</span></div><label>24/7<br><small>Protezione</small></label></div>
+</section>
 
 <section class="stats"><div><b>24/7</b><span>Protezione continua</span></div><div><b>HD</b><span>Videosorveglianza</span></div><div><b>SMART</b><span>Tecnologia connessa</span></div><div><b>360°</b><span>Sicurezza integrata</span></div></section>
 
@@ -27,22 +40,72 @@
 <article><b>+</b><h3>Assistenza</h3><p>Supporto per configurazione, aggiornamenti e sistemi di sicurezza.</p></article>
 </div></section>
 
+<section class="booking" id="appuntamento">
+  <div class="booking-copy">
+    <small>● PRENOTAZIONI</small>
+    <h2>Prenota una <em>consulenza.</em></h2>
+    <p>Richiedi un appuntamento per parlare del tuo impianto, valutare una soluzione o fissare un sopralluogo.</p>
+    <div class="booking-cards">
+      <button type="button" class="choice active" data-type="Consulenza sicurezza">Consulenza sicurezza</button>
+      <button type="button" class="choice" data-type="Sopralluogo">Sopralluogo</button>
+      <button type="button" class="choice" data-type="Preventivo">Preventivo</button>
+    </div>
+  </div>
+  <form id="bookingForm" action="https://formspree.io/f/mppwvbbv" method="POST">
+    <input type="hidden" name="_subject" value="Nuovo appuntamento — WALLAH SECURITY">
+    <input type="hidden" name="appointment_type" id="appointmentType" value="Consulenza sicurezza">
+    <label>Nome e cognome<input name="name" required placeholder="Il tuo nome"></label>
+    <div class="two"><label>Telefono<input name="phone" type="tel" required placeholder="351..."></label><label>Email<input name="email" type="email" placeholder="nome@email.com"></label></div>
+    <div class="two"><label>Data preferita<input name="date" type="date" required></label><label>Orario preferito<select name="time" required><option value="">Seleziona</option><option>09:00–11:00</option><option>11:00–13:00</option><option>14:00–16:00</option><option>16:00–18:00</option><option>18:00–20:00</option></select></label></div>
+    <label>Note<textarea name="notes" rows="4" placeholder="Descrivi brevemente ciò di cui hai bisogno"></textarea></label>
+    <button class="btn" type="submit">Richiedi appuntamento →</button><div id="bookingMsg"></div>
+  </form>
+</section>
+
 <section class="tech" id="tecnologia"><div class="phone"><div class="screen"><small>WALLAH SECURITY</small><h3>Sistema protetto</h3><div class="radar">●</div><span>● Tutto sotto controllo</span></div></div>
 <div><small>● TECNOLOGIA</small><h2>La sicurezza che<br><em>resta con te.</em></h2><p class="intro">Tecnologia moderna per rendere il controllo semplice, immediato e intuitivo.</p>
 <div class="feature"><b>01</b><span><strong>Controllo da smartphone</strong><br>Gestisci le funzioni compatibili dal tuo dispositivo.</span></div>
 <div class="feature"><b>02</b><span><strong>Notifiche intelligenti</strong><br>Ricevi avvisi sugli eventi importanti del sistema.</span></div>
 <div class="feature"><b>03</b><span><strong>Videosorveglianza</strong><br>Visualizza gli ambienti protetti tramite soluzioni compatibili.</span></div></div></section>
 
+<section class="section" id="energia">
+  <div class="center"><small>● NEWS ENERGIA</small><h2>Mercato libero<br><em>luce & gas.</em></h2>
+  <p class="intro center-text">Una sezione informativa con aggiornamenti e riferimenti ufficiali per orientarsi tra mercato libero, prezzi e novità.</p></div>
+  <div class="energy-grid">
+    <article class="energy-card"><span class="tag">ARERA · 29 SET 2026</span><h3>Elettricità: +37,3% per i vulnerabili in Maggior Tutela</h3><p>Per il IV trimestre 2026 ARERA comunica un aumento del 37,3% per i clienti vulnerabili ancora serviti in Maggior Tutela. Il dato non riguarda automaticamente tutti i clienti del mercato libero.</p><a href="https://www.arera.it/comunicati-stampa/dettaglio/elettricita-maggior-tutela-373-nel-iv-trimestre-2026-per-i-clienti-vulnerabili" target="_blank" rel="noopener">Leggi su ARERA →</a></article>
+    <article class="energy-card"><span class="tag">CONFRONTO UFFICIALE</span><h3>Confronta le offerte luce e gas</h3><p>ARERA indica il Portale Offerte come comparatore pubblico e indipendente per confrontare le offerte disponibili.</p><a href="https://www.ilportaleofferte.it/" target="_blank" rel="noopener">Apri Portale Offerte →</a></article>
+    <article class="energy-card"><span class="tag">AGGIORNAMENTI</span><h3>Vigilanza e prezzi dell'energia</h3><p>Consulta gli indicatori e le analisi ARERA sul mercato libero dell'energia elettrica e del gas.</p><a href="https://www.arera.it/vigilanza-energetica" target="_blank" rel="noopener">Vai ad ARERA →</a></article>
+  </div>
+  <p class="disclaimer">Informazioni a carattere informativo. Le condizioni economiche delle offerte possono cambiare: verificare sempre le condizioni aggiornate presso fonti ufficiali.</p>
+</section>
+
+<section class="section qr-section" id="qr">
+  <div><small>● QR CODE</small><h2>Contattaci in un <em>istante.</em></h2><p class="intro">Scansiona il QR per aprire direttamente WhatsApp e parlare con WALLAH SECURITY.</p><a class="btn" href="https://wa.me/393514436993">Apri WhatsApp →</a></div>
+  <div class="qr-card"><img src="qr-whatsapp.svg" alt="QR Code WhatsApp WALLAH SECURITY"><strong>WALLAH SECURITY</strong><span>Scansiona per WhatsApp</span></div>
+</section>
+
+<section class="section map-section" id="maps">
+  <div class="center"><small>● MAPS</small><h2>Dove trovarci.</h2><p class="intro center-text">WALLAH SECURITY — Via Luigi Einaudi 109, 45100 Rovigo (RO).</p></div>
+  <div class="map-frame">
+    <iframe title="WALLAH SECURITY - Via Luigi Einaudi 109, Rovigo" src="https://www.google.com/maps?q=Via%20Luigi%20Einaudi%20109%2C%2045100%20Rovigo%20RO&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="map-actions">
+    <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=Via%20Luigi%20Einaudi%20109%2C%2045100%20Rovigo%20RO" target="_blank" rel="noopener">Calcola percorso →</a>
+    <span>📍 Via Luigi Einaudi 109 · 45100 Rovigo (RO)</span>
+  </div>
+</section>
+
 <section class="section" id="come-funziona"><div class="center"><small>● IL NOSTRO METODO</small><h2>Semplice. Chiaro.<br><em>Professionale.</em></h2></div>
 <div class="steps"><div><b>01</b><h3>Contattaci</h3><p>Raccontaci cosa vuoi proteggere.</p></div><div><b>02</b><h3>Analizziamo</h3><p>Valutiamo ambienti ed esigenze.</p></div><div><b>03</b><h3>Progettiamo</h3><p>Definiamo una soluzione su misura.</p></div><div><b>04</b><h3>Proteggiamo</h3><p>Portiamo la soluzione nella tua realtà.</p></div></div></section>
 
-<section class="cta"><div><small>● PARLIAMONE</small><h2>Vuoi sentirti più sicuro?</h2><p>Contattaci per richiedere un preventivo.</p></div><a class="btn light" href="#preventivo">Richiedi un preventivo →</a></section>
+<section class="cta"><div><small>● PARLIAMONE</small><h2>Vuoi sentirti più sicuro?</h2><p>Prenota una consulenza o richiedi un preventivo.</p></div><a class="btn light" href="#appuntamento">Prenota ora →</a></section>
 
 <section class="section" id="faq"><div class="center"><small>● FAQ</small><h2>Domande frequenti</h2></div><div class="faq">
 <details><summary>Quanto costa un sistema di sicurezza?</summary><p>Dipende dagli ambienti, dal livello di protezione e dalle tecnologie necessarie. Richiedi un preventivo personalizzato.</p></details>
+<details><summary>Posso prenotare una consulenza?</summary><p>Sì. Compila il modulo appuntamento indicando data, fascia oraria e tipo di richiesta. Riceverai la conferma tramite i contatti indicati.</p></details>
 <details><summary>Posso controllare il sistema dal telefono?</summary><p>Molte soluzioni moderne permettono controllo e notifiche tramite smartphone, in base all'impianto.</p></details>
 <details><summary>Fate sistemi per casa e azienda?</summary><p>Sì, le soluzioni possono essere progettate per abitazioni, negozi, uffici e attività.</p></details>
-<details><summary>Posso chiedere solo videosorveglianza?</summary><p>Sì, possiamo valutare anche una soluzione dedicata alla videosorveglianza.</p></details></div></section>
+</div></section>
 
 <section class="contact" id="preventivo"><div><small>● CONTATTI</small><h2>Parliamo del tuo<br><em>progetto.</em></h2><p>Compila il modulo oppure contattaci direttamente.</p><a href="tel:+393514436993">☎ <span>351 443 6993</span></a><a href="https://wa.me/393514436993">◉ <span>Scrivici su WhatsApp</span></a></div>
 <form id="contactForm" action="https://formspree.io/f/mppwvbbv" method="POST"><input type="hidden" name="_subject" value="Nuova richiesta di preventivo — WALLAH SECURITY">
@@ -52,5 +115,8 @@
 <label>Messaggio<textarea name="message" rows="5" required placeholder="Cosa vuoi proteggere?"></textarea></label>
 <button class="btn" type="submit">Invia richiesta →</button><div id="msg"></div></form></section>
 </main>
+
 <footer><strong>WALLAH SECURITY</strong><p>Sistemi di sicurezza, antifurto e videosorveglianza.</p><a href="tel:+393514436993">351 443 6993</a><small>© 2026 WALLAH SECURITY</small></footer>
-<a class="wa" href="https://wa.me/393514436993">WA</a><script src="script.js"></script></body></html>
+<a class="wa" href="https://wa.me/393514436993" aria-label="WhatsApp">WA</a>
+<script src="script.js"></script>
+</body></html>

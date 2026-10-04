@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+<rect width="256" height="256" rx="12" fill="white"/>
+<g fill="#06101c">
+<rect x="18" y="18" width="64" height="64"/><rect x="30" y="30" width="40" height="40" fill="white"/><rect x="40" y="40" width="20" height="20"/>
+<rect x="174" y="18" width="64" height="64"/><rect x="186" y="30" width="40" height="40" fill="white"/><rect x="196" y="40" width="20" height="20"/>
+<rect x="18" y="174" width="64" height="64"/><rect x="30" y="186" width="40" height="40" fill="white"/><rect x="40" y="196" width="20" height="20"/>
+<path d="M96 18h16v16H96zM120 18h16v32h-16zM144 18h16v16h-16zM96 50h16v16H96zM112 66h16v16h-16zM144 50h16v32h-16zM96 96h16v16H96zM120 96h32v16h-32zM160 96h16v16h-16zM184 96h16v32h-16zM208 96h30v16h-30zM96 120h16v32H96zM128 120h16v16h-16zM152 120h16v32h-16zM176 136h16v16h-16zM200 128h16v16h-16zM224 120h14v32h-14zM96 160h32v16H96zM136 160h16v32h-16zM160 160h32v16h-32zM200 160h16v16h-16zM224 160h14v16h-14zM96 184h16v16H96zM120 192h16v16h-16zM152 200h16v16h-16zM176 184h16v32h-16zM200 192h16v16h-16zM224 184h14v32h-14zM96 224h16v14H96zM120 224h32v14h-32zM160 224h16v14h-16z"/>
+</g></svg>
