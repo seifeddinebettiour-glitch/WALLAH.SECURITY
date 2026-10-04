@@ -40,25 +40,87 @@
 <article><b>+</b><h3>Assistenza</h3><p>Supporto per configurazione, aggiornamenti e sistemi di sicurezza.</p></article>
 </div></section>
 
-<section class="booking" id="appuntamento">
-  <div class="booking-copy">
-    <small>● PRENOTAZIONI</small>
-    <h2>Prenota una <em>consulenza.</em></h2>
-    <p>Richiedi un appuntamento per parlare del tuo impianto, valutare una soluzione o fissare un sopralluogo.</p>
-    <div class="booking-cards">
-      <button type="button" class="choice active" data-type="Consulenza sicurezza">Consulenza sicurezza</button>
-      <button type="button" class="choice" data-type="Sopralluogo">Sopralluogo</button>
-      <button type="button" class="choice" data-type="Preventivo">Preventivo</button>
+<section class="booking-modern" id="appuntamento">
+  <div class="booking-head">
+    <div>
+      <span class="eyebrow">● PRENOTA ONLINE</span>
+      <h2>Il tuo appuntamento,<br><em>in pochi secondi.</em></h2>
+      <p>Scegli il servizio, il giorno e la fascia oraria che preferisci.</p>
     </div>
+    <div class="booking-badge"><span>W</span><div><b>WALLAH</b><small>SECURITY</small></div></div>
   </div>
-  <form id="bookingForm" action="https://formspree.io/f/mppwvbbv" method="POST">
+
+  <form id="bookingForm" action="https://formspree.io/f/mppwvbbv" method="POST" class="booking-panel">
     <input type="hidden" name="_subject" value="Nuovo appuntamento — WALLAH SECURITY">
     <input type="hidden" name="appointment_type" id="appointmentType" value="Consulenza sicurezza">
-    <label>Nome e cognome<input name="name" required placeholder="Il tuo nome"></label>
-    <div class="two"><label>Telefono<input name="phone" type="tel" required placeholder="351..."></label><label>Email<input name="email" type="email" placeholder="nome@email.com"></label></div>
-    <div class="two"><label>Data preferita<input name="date" type="date" required></label><label>Orario preferito<select name="time" required><option value="">Seleziona</option><option>09:00–11:00</option><option>11:00–13:00</option><option>14:00–16:00</option><option>16:00–18:00</option><option>18:00–20:00</option></select></label></div>
-    <label>Note<textarea name="notes" rows="4" placeholder="Descrivi brevemente ciò di cui hai bisogno"></textarea></label>
-    <button class="btn" type="submit">Richiedi appuntamento →</button><div id="bookingMsg"></div>
+    <input type="hidden" name="selected_time" id="selectedTime" value="">
+
+    <div class="booking-step">
+      <div class="step-number">01</div>
+      <div class="step-content">
+        <span class="step-label">COSA TI SERVE?</span>
+        <div class="service-options">
+          <button type="button" class="service-option active" data-type="Consulenza sicurezza">
+            <span class="service-icon">◈</span><strong>Consulenza</strong><small>Parliamo delle tue esigenze</small><b>→</b>
+          </button>
+          <button type="button" class="service-option" data-type="Sopralluogo">
+            <span class="service-icon">⌖</span><strong>Sopralluogo</strong><small>Valutiamo gli ambienti</small><b>→</b>
+          </button>
+          <button type="button" class="service-option" data-type="Preventivo">
+            <span class="service-icon">▣</span><strong>Preventivo</strong><small>Progettiamo la soluzione</small><b>→</b>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="booking-divider"></div>
+
+    <div class="booking-step">
+      <div class="step-number">02</div>
+      <div class="step-content">
+        <span class="step-label">QUANDO?</span>
+        <div class="date-time-grid">
+          <div class="date-box">
+            <label>Data preferita</label>
+            <input name="date" id="bookingDate" type="date" required>
+          </div>
+          <div class="time-box">
+            <label>Fascia oraria</label>
+            <div class="time-options">
+              <button type="button" class="time-option" data-time="09:00–11:00">09:00–11:00</button>
+              <button type="button" class="time-option" data-time="11:00–13:00">11:00–13:00</button>
+              <button type="button" class="time-option" data-time="14:00–16:00">14:00–16:00</button>
+              <button type="button" class="time-option" data-time="16:00–18:00">16:00–18:00</button>
+              <button type="button" class="time-option" data-time="18:00–20:00">18:00–20:00</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="booking-divider"></div>
+
+    <div class="booking-step">
+      <div class="step-number">03</div>
+      <div class="step-content">
+        <span class="step-label">I TUOI DATI</span>
+        <div class="customer-grid">
+          <label>Nome e cognome<input name="name" required placeholder="Mario Rossi"></label>
+          <label>Telefono<input name="phone" type="tel" required placeholder="351 000 0000"></label>
+          <label>Email <span>(opzionale)</span><input name="email" type="email" placeholder="mario@email.it"></label>
+          <label>Note <span>(opzionale)</span><input name="notes" placeholder="Come possiamo aiutarti?"></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="booking-bottom">
+      <div class="booking-summary">
+        <span>RIEPILOGO</span>
+        <strong id="summaryText">Consulenza sicurezza · Seleziona data e orario</strong>
+      </div>
+      <button class="modern-submit" type="submit"><span>Conferma richiesta</span><b>→</b></button>
+    </div>
+    <div id="bookingMsg" class="booking-message"></div>
   </form>
 </section>
 
